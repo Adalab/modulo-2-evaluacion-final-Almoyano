@@ -1,3 +1,3 @@
 "use strict";
 
-console.log(">>Globals ready :)");
+const paletteList = document.querySelector(".js-palette-serie");
