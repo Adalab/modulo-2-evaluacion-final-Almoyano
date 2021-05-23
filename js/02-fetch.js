@@ -1,13 +1,16 @@
+let globaldata = [];
+
 if (localStorage.getItem("data") === null) {
   fetch("http://api.tvmaze.com/shows")
     .then((response) => response.json())
     .then((data) => {
-      localStorage.setItem("show", JSON.stringify(data));
-      renderPalettes(data);
+      globalData = data;
+      localStorage.setItem("show", JSON.stringify(globalData));
+      renderPalettes(globalData);
     });
 } else {
-  const data = JSON.parse(localStorage.getItem("show"));
-  renderPalettes(data);
+  globalData = JSON.parse(localStorage.getItem("show"));
+  renderPalettes(globalData);
 }
 
 function renderPalettes(data) {
