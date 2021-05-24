@@ -1,3 +1,5 @@
+"use strict";
+
 function addListenersToCards() {
   const allCards = document.querySelectorAll(".js-card");
 
@@ -7,5 +9,8 @@ function addListenersToCards() {
 }
 
 function handleClickCard(event) {
+  // modificar favorites
+  // llamar a paintShow
+  // llamar a paintFavorites
   event.currentTarget.classList.toggle("favorite");
 }
