@@ -9,6 +9,7 @@
   </head>
   <body>
     <main>
+      <h1 class="title">Buscador de series</h1>
       <form action="#" class="js-form">
         <input
           class="js-search"
@@ -19,10 +20,12 @@
         />
         <input class="button js-button" type="submit" value="Search" />
       </form>
-      <h1 class="title">Buscador de series</h1>
-      <ul class="palette-serie js-palette-serie">
-        Cargando imágenes...
-      </ul>
+      <h2 class="title-favorites">Mis series favoritas</h2>
+      <div class="container">
+        <ul class="palette-serie js-palette-serie"></ul>
+
+        <ul class="js-favoriteserie"></ul>
+      </div>
     </main>
     <script type="text/javascript" src="././js/01-globals.js"></script>
     <script type="text/javascript" src="././js/02-fetch.js"></script>

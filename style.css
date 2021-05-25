@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
 .favorite {
   border: double 1px black;
   background-color: pink;

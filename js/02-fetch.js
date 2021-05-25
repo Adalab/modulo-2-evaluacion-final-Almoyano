@@ -1,10 +1,8 @@
-"use strict";
-
 function renderSeries() {
   paletteList.innerHTML = "";
   for (const show of globalData) {
     console.log(show.show.name);
-    paletteList.innerHTML += `<li class="palette-list-item js-card favorite">
+    paletteList.innerHTML += `<li data-id="${show.show.id}" class="palette-list-item js-card">
           <h2 class="item-name">${show.show.name}</h2></li>`;
 
     if (show.show.image === null) {

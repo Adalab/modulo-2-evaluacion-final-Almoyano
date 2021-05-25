@@ -1,5 +1,3 @@
-"use strict";
-
 function handleSubmit(event) {
   event.preventDefault();
   fetch("//api.tvmaze.com/search/shows?q=" + searchInput.value)
